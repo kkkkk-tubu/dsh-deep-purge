@@ -1,0 +1,90 @@
+{
+  "name": "dsh-deep-purge",
+  "version": "1.0.0",
+  "description": "Delete DSH sessions completely: clears all six on-disk locations (session logs, title cache, bili/billion-context SQLite index, workspace registry, cost-meter ledger, bridge logs), with backup, rollback, and automatic DSH restart.",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkkkk-tubu/dsh-deep-purge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkkkk-tubu/dsh-deep-purge/issues"
+  },
+  "homepage": "https://github.com/kkkkk-tubu/dsh-deep-purge#readme",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "ps",
+    "cordis.patch.yml",
+    "screenshots",
+    "screenshots.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible",
+        "0.3.0-rc.1": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0 || >=0.3.0-rc.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.2 <0.3.0-0 || >=0.3.0-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-session",
+    "session",
+    "delete",
+    "purge",
+    "cleanup",
+    "storage",
+    "disk-space",
+    "privacy",
+    "billion-context",
+    "windows"
+  ],
+  "os": [
+    "win32"
+  ]
+}

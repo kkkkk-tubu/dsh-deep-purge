@@ -1,0 +1,8 @@
+# 开发产物，不进 npm 包，也不进仓库
+node_modules/
+_shots/
+_shot-*.png
+shot-*.png
+*.log
+*.tmp
+session-delete-backup-*/

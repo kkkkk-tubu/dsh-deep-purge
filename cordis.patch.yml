@@ -1,0 +1,6 @@
+# dsh-deep-purge —— bundle patch
+#
+# 把宿主半区挂进 desktop profile 的配置树。
+- insert:
+    - id: dsh-deep-purge
+      name: dsh-deep-purge

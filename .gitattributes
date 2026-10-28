@@ -1,0 +1,19 @@
+# PowerShell 脚本必须是 CRLF + UTF-8 BOM，否则 Windows PowerShell 5.1
+# 会用 GBK 解析中文字面量并报语法错误。禁止任何 eol 归一化。
+*.ps1 -text
+*.psm1 -text
+
+# 其余文本统一 LF，避免跨平台 diff 噪音
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+.gitignore text eol=lf
+
+# 截图是二进制，别让 git 去猜
+*.png binary
+*.jpg binary
+*.webp binary
