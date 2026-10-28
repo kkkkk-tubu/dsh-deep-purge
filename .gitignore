@@ -6,3 +6,6 @@ shot-*.png
 *.log
 *.tmp
 session-delete-backup-*/
+
+# 一次性凭据读取脚本，绝不进仓库
+dev/read-git-cred.ps1

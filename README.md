@@ -6,7 +6,7 @@ DeepSeek Harness can archive a session, but archiving only hides it. The transcr
 
 Windows only.
 
-![First-run guide](screenshots/01-first-run-guide.png)
+![First-run guide](https://raw.githubusercontent.com/kkkkk-tubu/dsh-deep-purge/main/screenshots/01-first-run-guide.png)
 
 ---
 
@@ -56,7 +56,7 @@ Manual install: put the package under `<profile>/node_modules/`, add it to the p
 2. Tick the sessions you want gone. Your current session is disabled on purpose — the server rejects it too.
 3. **预演选中 (Dry run)** — lists hit counts for all six locations. Nothing is written.
 
-![Dry run: per-session hit counts for all six locations](screenshots/03-preview.png)
+![Dry run: per-session hit counts for all six locations](https://raw.githubusercontent.com/kkkkk-tubu/dsh-deep-purge/main/screenshots/03-preview.png)
 
 4. Type `DELETE` in the box (an anti-fat-finger phrase, not a password), then click **删除选中**.
 5. Confirm in the browser dialog. DSH exits within ~25 s, deletes, and relaunches itself.
@@ -66,7 +66,7 @@ Every deletion leaves a backup under `~/.dsh/session-delete-backup-<timestamp>/`
 
 ### The two safety nets
 
-![Panel with the permanent warning bar](screenshots/02-panel.png)
+![Panel with the permanent warning bar](https://raw.githubusercontent.com/kkkkk-tubu/dsh-deep-purge/main/screenshots/02-panel.png)
 
 **On first open** a blocking guide appears: what gets deleted (all six paths), the risk
 list, the five-step workflow, how to roll back, and how to uninstall. The start button
@@ -83,7 +83,7 @@ warning is not a warning.
 Every colour is a host design token (`--dsw-alias-*`), so the panel follows DSH's light and
 dark themes without a separate stylesheet. Nothing is hard-coded:
 
-![Dark theme](screenshots/04-dark-theme.png)
+![Dark theme](https://raw.githubusercontent.com/kkkkk-tubu/dsh-deep-purge/main/screenshots/04-dark-theme.png)
 
 ---
 
